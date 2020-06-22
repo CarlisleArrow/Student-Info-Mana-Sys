@@ -1,0 +1,64 @@
+﻿<Window x:Class="学生信息管理系统_.NET_Core_.pandemic"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:学生信息管理系统_.NET_Core_"
+        mc:Ignorable="d"
+        Title="疫情采集系统" Height="720" Width="1280" WindowStyle="None" WindowStartupLocation="CenterScreen" MinWidth="1280" MinHeight="720" MaxWidth="1280" MaxHeight="720" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="项目：" HorizontalAlignment="Left" Height="50" Margin="50,145,0,0" VerticalAlignment="Top" Width="80" Foreground="#DD000000" FontSize="30" VerticalContentAlignment="Center"/>
+        <Label Content="学院：" HorizontalAlignment="Left" Height="50" Margin="50,230,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <Label Content="联系电话：" HorizontalAlignment="Left" Height="50" Margin="50,318,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="ph1" HorizontalAlignment="Left" Height="50" Margin="175,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F" AutomationProperties.HelpText="13888888888"/>
+        <Label Content="所在地：" HorizontalAlignment="Left" Height="50" Margin="50,400,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="location" HorizontalAlignment="Left" Height="50" Margin="175,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F"/>
+        <Label Content="旅行史：" HorizontalAlignment="Left" Height="50" Margin="560,485,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="travel" HorizontalAlignment="Left" Height="50" Margin="685,485,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F"/>
+        <Label x:Name="quan" Content="是否隔离：" HorizontalAlignment="Left" Height="50" Margin="50,485,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <Label Content="是否出现症状：" HorizontalAlignment="Left" Height="50" Margin="560,230,0,0" VerticalAlignment="Top" Width="181" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="symp" HorizontalAlignment="Left" Height="50" Margin="745,230,0,0" VerticalAlignment="Top" Width="120" FontSize="25" VerticalContentAlignment="Center" BorderBrush="#89A0226F" Foreground="#FFB94995">
+            <ComboBoxItem Content="是" Foreground="#FFB94995"/>
+            <ComboBoxItem Content="否" Foreground="#FFB94995"/>
+        </ComboBox>
+        <Label Content="社区内是否存在疑似或确诊：" HorizontalAlignment="Left" Height="50" Margin="560,318,0,0" VerticalAlignment="Top" Width="335" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <Label Content="体温：" HorizontalAlignment="Left" Height="50" Margin="560,400,0,0" VerticalAlignment="Top" Width="140" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="temp" HorizontalAlignment="Left" Height="50" Margin="705,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F"/>
+        <Button x:Name="sub" Content="提交" HorizontalAlignment="Left" Height="50" Margin="925,645,0,0" VerticalAlignment="Top" Width="150" BorderBrush="{x:Null}" FontSize="20" Click="sub_Click" Foreground="White">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB94995" Opacity="1"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="exit" Content="返回" HorizontalAlignment="Left" Height="50" Margin="1080,645,0,0" VerticalAlignment="Top" Width="150" BorderBrush="{x:Null}" FontSize="20" Click="exit_Click" Foreground="White">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB94995" Opacity="1"/>
+            </Button.Background>
+        </Button>
+        <Label Content="学号：" HorizontalAlignment="Left" Height="50" Margin="560,145,0,0" VerticalAlignment="Top" Width="80" Foreground="#DD000000" FontSize="30" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="ID" HorizontalAlignment="Left" Height="50" Margin="645,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F" IsReadOnly="True"/>
+        <TextBox x:Name="type" HorizontalAlignment="Left" Height="50" Margin="135,145,0,0" Text="疫情填报" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontSize="30" VerticalContentAlignment="Top" IsReadOnly="True"/>
+        <Label Content="信息采集中心" HorizontalAlignment="Center" Height="75" Margin="0,25,0,0" VerticalAlignment="Top" Width="320" Foreground="#DD000000" FontSize="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <ComboBox x:Name="susp" HorizontalAlignment="Left" Height="50" Margin="925,318,0,0" VerticalAlignment="Top" Width="120" FontSize="25" VerticalContentAlignment="Center" BorderBrush="#89A0226F" Foreground="#FFB94995">
+            <ComboBoxItem Content="是" Foreground="#FFB94995"/>
+            <ComboBoxItem Content="否" Foreground="#FFB94995"/>
+        </ComboBox>
+        <Label Content="是否确诊：" HorizontalAlignment="Left" Height="50" Margin="55,577,0,0" VerticalAlignment="Top" Width="181" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="confirm" HorizontalAlignment="Left" Height="50" Margin="180,577,0,0" VerticalAlignment="Top" Width="120" FontSize="25" VerticalContentAlignment="Center" BorderBrush="#89A0226F" Foreground="#FFB94995">
+            <ComboBoxItem Content="是" Foreground="#FFB94995"/>
+            <ComboBoxItem Content="否" Foreground="#FFB94995"/>
+        </ComboBox>
+        <ComboBox x:Name="quan1" HorizontalAlignment="Left" Height="50" Margin="180,485,0,0" VerticalAlignment="Top" Width="120" FontSize="25" VerticalContentAlignment="Center" BorderBrush="#89A0226F" Foreground="#FFB94995">
+            <ComboBoxItem Content="是" Foreground="#FFB94995"/>
+            <ComboBoxItem Content="否" Foreground="#FFB94995"/>
+        </ComboBox>
+        <Button x:Name="pan_dashboard" Content="查看仪表板" HorizontalAlignment="Left" Height="50" Margin="770,645,0,0" VerticalAlignment="Top" Width="150" BorderBrush="{x:Null}" FontSize="20" Click="pan_dashboard_Click" Foreground="White">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB94995" Opacity="1"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="acad" HorizontalAlignment="Left" Height="50" Margin="175,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F"/>
+        <Label Content="日期：" HorizontalAlignment="Left" Height="50" Margin="560,577,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <DatePicker x:Name="Date" HorizontalAlignment="Left" Margin="686,590,0,0" VerticalAlignment="Top" Background="{x:Null}" Width="238" Height="37"/>
+
+    </Grid>
+</Window>

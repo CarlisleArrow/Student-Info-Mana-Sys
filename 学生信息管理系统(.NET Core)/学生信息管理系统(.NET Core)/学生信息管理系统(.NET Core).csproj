@@ -1,0 +1,146 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>学生信息管理系统_.NET_Core_</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>Copyright.pfx</AssemblyOriginatorKeyFile>
+    <PackageId>学生信息管理系统</PackageId>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>彭橹屹，何其安，张天豪</Authors>
+    <Company>重庆科技学院</Company>
+    <Product>学生信息管理系统</Product>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>本项目基于C#和Visual Studio Community 2019开发，集成教务系统，个人信息查询和信息填报几个部分，推广一站式服务查询系统。该软件许可证仅用于学习和交流使用，严禁在未经IDE厂商和作者书面授权下用于任何形式的商业用途。</Description>
+    <Copyright>©Copyright 2020 Peng Luyi, He Qian, Zhang Tianhao All Rights Reserved.</Copyright>
+    <PackageIcon>logo3.png</PackageIcon>
+    <ApplicationIcon>bitbug_favicon.ico</ApplicationIcon>
+    <PackageLicenseFile>readme.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Resources\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <None Remove="Resources\**" />
+    <None Include="..\readme.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <Resource Include="1.png" />
+    <Resource Include="13.png" />
+    <Resource Include="2.png" />
+    <Resource Include="back.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="hlp.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="hlp2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="hlp3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Image1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Logo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="logo2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="logo3.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </Resource>
+    <Page Remove="Resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="xk.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="1.png" />
+    <None Remove="13.png" />
+    <None Remove="2.png" />
+    <None Remove="back.png" />
+    <None Remove="hlp.png" />
+    <None Remove="hlp2.png" />
+    <None Remove="hlp3.png" />
+    <None Remove="Image1.png" />
+    <None Remove="Logo.png" />
+    <None Remove="logo2.png" />
+    <None Remove="pandemic.png" />
+    <None Remove="QQ截图20200329224009.png" />
+    <None Remove="QQ截图20200329224148.png" />
+    <None Remove="QQ截图20200329224204.png" />
+    <None Remove="QQ截图20200329224216.png" />
+    <None Remove="startup.png" />
+    <None Remove="tip.png" />
+    <None Remove="图片0.png" />
+    <None Remove="图片1.png" />
+    <None Remove="图片2.png" />
+    <None Remove="图片3.png" />
+    <None Remove="图片30.png" />
+    <None Remove="图片37.png" />
+    <None Remove="图片38.png" />
+    <None Remove="图片4.png" />
+    <None Remove="图片5.png" />
+    <None Remove="图片6.png" />
+    <None Remove="图片66.png" />
+    <None Remove="图片7.png" />
+    <None Remove="图片87.png" />
+    <None Remove="图片90.png" />
+    <None Remove="图片99.png" />
+    <None Remove="心理.png" />
+    <None Remove="批注 2020-03-13 061142.png" />
+    <None Remove="批注 2020-03-30 140230.png" />
+    <Page Remove="xk.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="1.2.3-ci981" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.1.0-ci981" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0-beta3.final">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.PowerBI.Api" Version="3.11.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="pandemic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="tip.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="图片0.png" />
+    <Resource Include="图片1.png" />
+    <Resource Include="图片2.png" />
+    <Resource Include="图片3.png" />
+    <Resource Include="图片30.png" />
+    <Resource Include="图片37.png" />
+    <Resource Include="图片38.png" />
+    <Resource Include="图片4.png" />
+    <Resource Include="图片5.png" />
+    <Resource Include="图片6.png" />
+    <Resource Include="图片66.png" />
+    <Resource Include="图片7.png" />
+    <Resource Include="图片87.png" />
+    <Resource Include="图片90.png" />
+    <Resource Include="图片99.png" />
+    <Resource Include="心理.png" />
+    <Resource Include="批注 2020-03-13 061142.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="startup.png" />
+  </ItemGroup>
+
+</Project>

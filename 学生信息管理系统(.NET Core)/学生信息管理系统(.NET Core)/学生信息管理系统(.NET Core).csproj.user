@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\Carlisle Arrow\Desktop\档案\计算机设计大赛\学生信息管理系统\学生信息管理系统%28.NET Core%29\学生信息管理系统%28.NET Core%29\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="analy.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="aolan.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="cj.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dashboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="dev.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Info.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="information.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="jw.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="kb.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="msg.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="next.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="pandemic.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="pan_dash.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Reg.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="score.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Stu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Teacher.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="work.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="work_dashboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="analy.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="aolan.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="cj.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="dev.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Info.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="information.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="jw.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="kb.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="msg.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="next.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="pandemic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="pan_dash.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Reg.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="score.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Stu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Teacher.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="work.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="work_dashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

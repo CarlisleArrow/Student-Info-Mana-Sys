@@ -1,0 +1,101 @@
+﻿<Window x:Class="学生信息管理系统_.NET_Core_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:学生信息管理系统_.NET_Core_"
+        mc:Ignorable="d"
+        Title="欢迎您来到重庆科技学院" Height="720" Width="1280" WindowStyle="None" WindowStartupLocation="CenterScreen" MinWidth="1280" MinHeight="720" MaxWidth="1280" MaxHeight="720" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="图片1.png"/>
+    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/图片1.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="16*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle HorizontalAlignment="Left" Height="522" Margin="223,7,0,0" VerticalAlignment="Top" Width="552" Grid.ColumnSpan="2" Grid.RowSpan="4" Grid.Column="1" Grid.Row="1">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="White" Opacity="0.95"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="登录" HorizontalAlignment="Left" Height="58" Margin="262,28.2,0,0" VerticalAlignment="Top" Width="83" FontSize="36" FontWeight="Bold" RenderTransformOrigin="0.821,0.549" Grid.Column="1" Grid.Row="2" Foreground="#DD000000"/>
+        <Path Data="M365.6,330.4 L639.20001,330.4" HorizontalAlignment="Left" Height="6.2" Margin="269.6,131.133,0,0" Stretch="Fill" VerticalAlignment="Top" Width="462.4" Stroke="#FF923E79" Fill="#FF923E79" OpacityMask="#FF923E79" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="2"/>
+        <TextBox x:Name="txtID" HorizontalAlignment="Left" Height="34" Margin="270,96.2,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="462" VerticalContentAlignment="Center" FontSize="18" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Background="{x:Null}" BorderThickness="0" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="2" CaretBrush="#FF9C5286">
+            <TextBox.Resources>
+                <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="0.6" Stretch="None" AlignmentX="Left">
+                    <VisualBrush.Visual>
+                        <TextBlock Text="输入您的学号和工号以继续" Foreground="#FFA96695"/>
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </TextBox.Resources>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Style.Triggers>
+                        <Trigger Property="Text" Value="{x:Null}">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                        <Trigger Property="Text" Value="">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <Label Content="新同学？" HorizontalAlignment="Left" Height="29" Margin="270,42,0,0" VerticalAlignment="Top" Width="59" FontSize="14" VerticalContentAlignment="Center" Foreground="Black" Grid.Row="3" Grid.Column="1"/>
+        <Button x:Name="newstu" Content="进入新生报道系统" HorizontalAlignment="Left" Height="29" Margin="329,42,0,0" VerticalAlignment="Top" Width="146" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="#FF9C5286" FontSize="14" BorderThickness="0" Click="newstu_Click" Grid.Row="3" Grid.Column="1" HorizontalContentAlignment="Left"/>
+        <Button x:Name="Next" Content="下一步" HorizontalAlignment="Left" Height="40" Margin="0,103,0,0" VerticalAlignment="Top" Width="124" BorderBrush="{x:Null}" Background="#FF9C5286" Foreground="White" FontSize="16" Click="Next_Click" BorderThickness="0" Grid.Column="2" Grid.Row="3" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
+            <Button.LayoutTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.LayoutTransform>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Path Data="M365.6,330.4 L639.20001,330.4" HorizontalAlignment="Left" Height="6.2" Margin="269.6,1.866,0,0" Stretch="Fill" VerticalAlignment="Top" Width="462.4" Stroke="#FF923E79" Fill="#FF923E79" OpacityMask="#FF923E79" Grid.ColumnSpan="2" Grid.Row="3" Grid.Column="1"/>
+        <PasswordBox x:Name="Pwd" HorizontalAlignment="Left" Height="35" Margin="270,141.2,0,0" VerticalAlignment="Top" Width="462" FontSize="18" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" VerticalContentAlignment="Center"  SelectionOpacity="1" BorderThickness="0" Grid.ColumnSpan="2" Grid.RowSpan="2" Grid.Column="1" Grid.Row="2" CaretBrush="#FF9C5286"/>
+        <Path Data="M365.6,330.4 L639.20001,330.4" HorizontalAlignment="Left" Height="5.667" Margin="269.6,72.8,0,0" Stretch="Fill" VerticalAlignment="Top" Width="462.4" Stroke="#FF747474" Fill="#FF7F7F7F" Grid.ColumnSpan="2" Grid.Row="4" Grid.Column="1">
+            <Path.OpacityMask>
+                <SolidColorBrush Color="#FF595959" Opacity="0.6"/>
+            </Path.OpacityMask>
+        </Path>
+        <Label Content="您正在访问重庆科技学院综合信息服务系统" Margin="270,83.2,228,45.8" FontSize="16" Grid.ColumnSpan="2" Grid.Row="4" Grid.Column="1" Foreground="#DD000000"/>
+        <Button Content="退出" Grid.Column="2" HorizontalAlignment="Left" Height="40" Margin="129,103,0,0" VerticalAlignment="Top" Width="124" Background="#FF9C5286" BorderBrush="{x:Null}" Foreground="#FFFDFAFA" FontSize="16" Padding="0" Click="Button_Click" BorderThickness="0" ScrollViewer.CanContentScroll="True" Grid.Row="3" Grid.RowSpan="2" />
+        <Rectangle Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="23" Margin="0,57,0,0" Grid.Row="5" VerticalAlignment="Top" Width="1280">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF3C3C3C" Opacity="0.8"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="©Designed by Peng Luyi, He Qian and Zhang Tianhao" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="400,57,0,0" Grid.Row="5" VerticalAlignment="Top" Width="240" Foreground="White" FontSize="10" FontFamily="Segoe UI Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="2"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="37" Margin="262,51,0,0" Grid.Row="1" VerticalAlignment="Top" Width="187" Grid.RowSpan="2" Source="/logo2.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/logo2.png" Stretch="Uniform"/>
+            </Image.OpacityMask>
+        </Image>
+        <CheckBox x:Name="cboxR" Content="记住我" Grid.Column="1" HorizontalAlignment="Left" Margin="276,10,0,0" Grid.Row="3" VerticalAlignment="Top" Height="27" Width="80" Background="#FF9B5285" BorderBrush="#FF9C5286" FontSize="16" Checked="cboxR_Checked"/>
+        <CheckBox x:Name="cboxA" Content="自动登录" Grid.Column="1" HorizontalAlignment="Left" Margin="361,10,0,0" Grid.Row="3" VerticalAlignment="Top" Height="27" Width="88" Background="#FF9B5285" BorderBrush="#FF9C5286" FontSize="16"/>
+    </Grid>
+</Window>

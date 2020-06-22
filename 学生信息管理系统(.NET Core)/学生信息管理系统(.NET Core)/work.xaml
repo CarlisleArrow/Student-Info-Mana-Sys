@@ -1,0 +1,50 @@
+﻿<Window x:Class="学生信息管理系统_.NET_Core_.work"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:学生信息管理系统_.NET_Core_"
+        mc:Ignorable="d"
+        Title="就业采集系统" Height="720" Width="1280" WindowStyle="None" WindowStartupLocation="CenterScreen" MinWidth="1280" MinHeight="720" MaxWidth="1280" MaxHeight="720" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="信息采集中心" HorizontalAlignment="Center" Height="75" Margin="0,25,0,0" VerticalAlignment="Top" Width="320" Foreground="#DD000000" FontSize="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label Content="项目：" HorizontalAlignment="Left" Height="50" Margin="50,145,0,0" VerticalAlignment="Top" Width="80" Foreground="#DD000000" FontSize="30" VerticalContentAlignment="Center"/>
+        <Label Content="联系电话：" HorizontalAlignment="Left" Height="50" Margin="50,230,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="ph1" HorizontalAlignment="Left" Height="50" Margin="175,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F"/>
+        <Label Content="学院：" HorizontalAlignment="Left" Height="50" Margin="50,318,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="acad" HorizontalAlignment="Left" Height="50" Margin="175,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F"/>
+        <Label Content="就业企业：" HorizontalAlignment="Left" Height="50" Margin="565,230,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="company" HorizontalAlignment="Left" Height="50" Margin="690,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="465" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F"/>
+        <Label Content="就业地区：" HorizontalAlignment="Left" Height="50" Margin="50,400,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="location" HorizontalAlignment="Left" Height="50" Margin="175,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F"/>
+        <Label Content="面试次数：" HorizontalAlignment="Left" Height="50" Margin="560,312,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="interview" HorizontalAlignment="Left" Height="50" Margin="680,312,0,0" VerticalAlignment="Top" Width="120" FontSize="25" VerticalContentAlignment="Center" BorderBrush="#89A0226F" Foreground="#FFB94995">
+            <ComboBoxItem Content="1" Foreground="#FFB94995"/>
+            <ComboBoxItem Content="2" Foreground="#FFB94995"/>
+            <ComboBoxItem Content="3+"/>
+        </ComboBox>
+        <Label Content="面试结果：" HorizontalAlignment="Left" Height="50" Margin="560,400,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="result" HorizontalAlignment="Left" Height="50" Margin="680,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F"/>
+        <Label Content="学号：" HorizontalAlignment="Left" Height="50" Margin="560,145,0,0" VerticalAlignment="Top" Width="80" Foreground="#DD000000" FontSize="30" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="ID" HorizontalAlignment="Left" Height="50" Margin="645,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F" IsReadOnly="True"/>
+        <TextBox x:Name="type" HorizontalAlignment="Left" Height="50" Margin="135,145,0,0" Text="毕业生去向登记" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontSize="30" VerticalContentAlignment="Top" IsReadOnly="True"/>
+        <Button x:Name="sub" Content="提交" HorizontalAlignment="Left" Height="50" Margin="925,645,0,0" VerticalAlignment="Top" Width="150" BorderBrush="{x:Null}" FontSize="20" Click="sub_Click" Foreground="#FFFFFDFD">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB94995" Opacity="1"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="exit" Content="返回" HorizontalAlignment="Left" Height="50" Margin="1080,645,0,0" VerticalAlignment="Top" Width="150" BorderBrush="{x:Null}" FontSize="20" Click="exit_Click" Foreground="#FFFFFDFD">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB94995" Opacity="1"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="dash" Content="查看仪表板" HorizontalAlignment="Left" Height="50" Margin="770,645,0,0" VerticalAlignment="Top" Width="150" BorderBrush="{x:Null}" FontSize="20" Click="dash_Click" Foreground="#FFFFFDFD">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB94995" Opacity="1"/>
+            </Button.Background>
+        </Button>
+        <Label Content="面试企业：" HorizontalAlignment="Left" Height="50" Margin="50,498,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="interview1" HorizontalAlignment="Left" Height="50" Margin="175,498,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="465" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F" TextChanged="interview1_TextChanged"/>
+
+    </Grid>
+</Window>

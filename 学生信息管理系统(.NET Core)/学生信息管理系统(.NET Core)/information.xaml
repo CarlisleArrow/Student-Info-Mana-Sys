@@ -1,0 +1,54 @@
+﻿<Window x:Class="学生信息管理系统_.NET_Core_.information"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:学生信息管理系统_.NET_Core_"
+        mc:Ignorable="d"
+        Title="留校采集" Height="720" Width="1280" WindowStyle="None" WindowStartupLocation="CenterScreen" MinWidth="1280" MinHeight="720" MaxWidth="1280" MaxHeight="720" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="信息采集中心" HorizontalAlignment="Center" Height="75" Margin="0,25,0,0" VerticalAlignment="Top" Width="320" Foreground="#DD000000" FontSize="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label Content="项目：" HorizontalAlignment="Left" Height="50" Margin="50,145,0,0" VerticalAlignment="Top" Width="80" Foreground="#DD000000" FontSize="30" VerticalContentAlignment="Center"/>
+        <Label Content="留校原因：" HorizontalAlignment="Left" Height="50" Margin="50,230,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="reason" HorizontalAlignment="Left" Height="50" Margin="170,230,0,0" VerticalAlignment="Top" Width="215" FontSize="25" VerticalContentAlignment="Center" BorderBrush="#89A0226F">
+            <ComboBoxItem Content="参加竞赛" Foreground="#FFB94995"/>
+            <ComboBoxItem Content="留校考研" Foreground="#FFB94995"/>
+            <ComboBoxItem Content="假期兼职" Foreground="#FFB94995"/>
+        </ComboBox>
+        <Label Content="联系电话：" HorizontalAlignment="Left" Height="50" Margin="50,318,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="ph1" HorizontalAlignment="Left" Height="50" Margin="175,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F"/>
+        <Label Content="家长电话：" HorizontalAlignment="Left" Height="50" Margin="50,400,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="ph2" HorizontalAlignment="Left" Height="50" Margin="175,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F"/>
+        <Label Content="假期宿舍：" HorizontalAlignment="Left" Height="50" Margin="50,485,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="dor" HorizontalAlignment="Left" Height="50" Margin="175,485,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F"/>
+        <Label Content="宿舍床号：" HorizontalAlignment="Left" Height="50" Margin="50,565,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="bed" HorizontalAlignment="Left" Height="50" Margin="175,565,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F"/>
+        <Label Content="中途离校：" HorizontalAlignment="Left" Height="50" Margin="560,230,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="interex" HorizontalAlignment="Left" Height="50" Margin="680,230,0,0" VerticalAlignment="Top" Width="120" FontSize="25" VerticalContentAlignment="Center" BorderBrush="#89A0226F" Foreground="#FFB94995">
+            <ComboBoxItem Content="是" Foreground="#FFB94995"/>
+            <ComboBoxItem Content="否" Foreground="#FFB94995"/>
+        </ComboBox>
+        <Label Content="离校日期：" HorizontalAlignment="Left" Height="50" Margin="560,318,0,0" VerticalAlignment="Top" Width="115" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="date" HorizontalAlignment="Left" Height="50" Margin="680,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F"/>
+        <Label Content="辅导员意见：" HorizontalAlignment="Left" Height="50" Margin="560,400,0,0" VerticalAlignment="Top" Width="140" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="re1" HorizontalAlignment="Left" Height="50" Margin="705,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F" IsReadOnly="True"/>
+        <Label Content="学院意见：" HorizontalAlignment="Left" Height="50" Margin="560,485,0,0" VerticalAlignment="Top" Width="120" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="re2" HorizontalAlignment="Left" Height="50" Margin="680,485,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F" IsReadOnly="True"/>
+        <Label Content="学校意见：" HorizontalAlignment="Left" Height="50" Margin="560,565,0,0" VerticalAlignment="Top" Width="120" Foreground="#DD000000" FontSize="25" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="re3" HorizontalAlignment="Left" Height="50" Margin="680,565,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F" IsReadOnly="True"/>
+        <Button x:Name="sub" Content="Submit" HorizontalAlignment="Left" Height="50" Margin="925,645,0,0" VerticalAlignment="Top" Width="150" BorderBrush="{x:Null}" FontSize="20" Click="sub_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB94995" Opacity="1"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="exit" Content="Back" HorizontalAlignment="Left" Height="50" Margin="1080,645,0,0" VerticalAlignment="Top" Width="150" BorderBrush="{x:Null}" FontSize="20" Click="exit_Click">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB94995" Opacity="1"/>
+            </Button.Background>
+        </Button>
+        <Label Content="学号：" HorizontalAlignment="Left" Height="50" Margin="560,145,0,0" VerticalAlignment="Top" Width="80" Foreground="#DD000000" FontSize="30" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="ID" HorizontalAlignment="Left" Height="50" Margin="645,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" VerticalContentAlignment="Center" FontSize="18" BorderBrush="#89A0226F" IsReadOnly="True"/>
+        <TextBox x:Name="type" HorizontalAlignment="Left" Height="50" Margin="135,145,0,0" Text="假期留校" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontSize="30" VerticalContentAlignment="Top" IsReadOnly="True"/>
+
+    </Grid>
+</Window>

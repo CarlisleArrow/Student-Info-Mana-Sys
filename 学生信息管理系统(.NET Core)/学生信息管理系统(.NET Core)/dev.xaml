@@ -1,0 +1,38 @@
+﻿<Window x:Class="学生信息管理系统_.NET_Core_.dev"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:学生信息管理系统_.NET_Core_"
+        mc:Ignorable="d"
+        Title="职业发展规划" Height="720" Width="1280" WindowStyle="None" WindowStartupLocation="CenterScreen" MinWidth="1280" MinHeight="720" MaxWidth="1280" MaxHeight="720" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="职业发展规划平台" HorizontalAlignment="Center" Height="60" Margin="0,57,0,0" VerticalAlignment="Top" Width="318" Foreground="#DD000000" FontSize="35" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Grid HorizontalAlignment="Left" Height="73" Margin="524,0,0,0" VerticalAlignment="Top" Width="203">
+            <Grid.Background>
+                <ImageBrush ImageSource="/logo2.png" Stretch="Uniform"/>
+            </Grid.Background>
+        </Grid>
+        <DataGrid x:Name="cj" HorizontalAlignment="Left" Height="473" Margin="10,147,0,0" VerticalAlignment="Top" Width="549" Background="{x:Null}" Foreground="#DDA6317D" ColumnHeaderStyle="{DynamicResource MaterialDesignRaisedButton}" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Height="323" Margin="686,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="556" FontSize="20" LineHeight="36" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+                 我们发现，作为自动化学生，您的涉硬件类科目和理论数学类成绩普遍较高，而对程序设计及涉编译类科目的成绩普遍较低。因此，我们建议您向：<Span Foreground="Red"><Bold>硬件工程师</Bold></Span>发展。以下是我们建议您的发展计划。
+            <LineBreak/>
+            <Bold>·1   尽可能地提高自身程序设计能力，因为您也需要设计嵌入式内容。</Bold>
+            <LineBreak/>
+            <Bold>·2   学好专业课之余，参加各种学科竞赛，拓宽眼界。我们建议您的竞赛有：蓝桥杯，TI杯，全国大学生计算机设计大赛，微软Spark Cup等。</Bold>
+            <LineBreak/>
+            <Bold>·3   熟悉计算机市场行情；制定计算机组装计划；能够选购组装需要的硬件设备，并能合理配置、安装计算机和外围设备。</Bold>
+            <LineBreak/>
+            <Bold>·4   学会并掌握IC 设计、电路设计和PCB布线标准规范，熟练使用各种模拟器和PCB布线软件，达到具有分析和调试操作水平。</Bold>
+
+
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="74" Margin="686,152,0,0" Text="您好，我们分析了您的成绩并将其陈列在左边数据表中。您可以很清晰的看到自己从高到低排序的成绩。" TextWrapping="Wrap" VerticalAlignment="Top" Width="556" FontSize="20" LineHeight="36"/>
+        <Label Content="关于自身职业发展的更多详细信息，请您单击下方按钮参加专业人格测评。" HorizontalAlignment="Left" Height="39" Margin="626,581,0,0" VerticalAlignment="Top" Width="654" Foreground="#DDF90909" FontSize="20"/>
+        <Button x:Name="mbti" Content="MBTI测试" HorizontalAlignment="Left" Height="53" Margin="756,642,0,0" VerticalAlignment="Top" Width="159" Background="#FFB93D91" BorderBrush="{x:Null}" FontSize="20" Foreground="White" Click="mbti_Click"/>
+        <Button x:Name="hld" Content="霍兰德测试" HorizontalAlignment="Left" Height="53" Margin="920,642,0,0" VerticalAlignment="Top" Width="158" Background="#FFB93D91" BorderBrush="{x:Null}" FontSize="20" Foreground="White" Click="hld_Click"/>
+        <Button x:Name="back" Content="退出" HorizontalAlignment="Left" Height="53" Margin="1083,642,0,0" VerticalAlignment="Top" Width="159" Background="#FFB93D91" BorderBrush="{x:Null}" FontSize="20" Foreground="White" Click="back_Click"/>
+        <Button x:Name="next" Content="进一步查看" HorizontalAlignment="Left" Height="53" Margin="592,642,0,0" VerticalAlignment="Top" Width="159" Background="#FFB93D91" Foreground="White" FontSize="20" BorderBrush="{x:Null}" Click="next_Click"/>
+
+    </Grid>
+</Window>

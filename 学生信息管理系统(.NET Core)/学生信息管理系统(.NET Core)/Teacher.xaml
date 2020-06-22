@@ -1,0 +1,22 @@
+﻿<Window x:Class="学生信息管理系统_.NET_Core_.Teacher"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:学生信息管理系统_.NET_Core_"
+        mc:Ignorable="d"
+        Title="教师用户" Height="450" Width="800">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="69" Margin="285,28,0,0" VerticalAlignment="Top" Width="207">
+            <Grid.Background>
+                <ImageBrush ImageSource="/logo2.png" Stretch="Uniform"/>
+            </Grid.Background>
+        </Grid>
+        <Label Content="老师您好，请您通过OA系统查阅相关信息。" HorizontalAlignment="Center" Height="161" Margin="0,142,0,0" VerticalAlignment="Top" Width="637" Foreground="#DDFA1111" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" FontWeight="Bold">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+
+    </Grid>
+</Window>

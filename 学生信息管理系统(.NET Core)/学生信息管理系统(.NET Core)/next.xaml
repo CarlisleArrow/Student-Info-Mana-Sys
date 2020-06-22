@@ -1,0 +1,47 @@
+﻿<Page x:Class="学生信息管理系统_.NET_Core_.next"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:学生信息管理系统_.NET_Core_"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="毕业生去向" Height="720" Width="1280"  MinWidth="1280" MinHeight="720" MaxWidth="1280" MaxHeight="720" >
+    <Page.Triggers>
+        <EventTrigger RoutedEvent="Page.Loaded">
+            <EventTrigger.Actions>
+                <BeginStoryboard>
+                    <Storyboard>
+                        <!--<ThicknessAnimation Duration="0:0:.85" Storyboard.TargetProperty="Margin" From="900,0,-900,0" To="0" DecelerationRatio=".9" />-->
+                        <ThicknessAnimation Duration="0:0:.45" Storyboard.TargetProperty="Margin" From="-50,0,50,0" To="0" DecelerationRatio=".9" />
+                        <DoubleAnimation Duration="0:0:.35" Storyboard.TargetProperty="Opacity" From="0" To="1" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger.Actions>
+        </EventTrigger>
+    </Page.Triggers>
+
+    <Grid Background="White">
+        <Label Content="职业发展规划平台" HorizontalAlignment="Center" Height="60" Margin="0,57,0,0" VerticalAlignment="Top" Width="318" Foreground="#DD000000" FontSize="35" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Grid HorizontalAlignment="Left" Height="73" Margin="524,0,0,0" VerticalAlignment="Top" Width="203">
+            <Grid.Background>
+                <ImageBrush ImageSource="/logo2.png" Stretch="Uniform"/>
+            </Grid.Background>
+        </Grid>
+        <TextBlock HorizontalAlignment="Left" Height="67" Margin="42,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="513" FontSize="23">
+            除了您的<Span Foreground="Red"><Bold>专业必修课</Bold></Span>以外，我们在您的人才培养计划中，还找到了以下选修内容：
+
+        </TextBlock>
+
+        <DataGrid x:Name="selection" HorizontalAlignment="Left" Height="429" Margin="42,211,0,0" VerticalAlignment="Top" Width="513" Background="{x:Null}" Foreground="#FF94407B" ColumnHeaderStyle="{DynamicResource MaterialDesignRaisedButton}"/>
+
+        <TextBlock HorizontalAlignment="Left" Height="67" Margin="722,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="513" FontSize="23"><Run Text="我们建议您除了"/><Span Foreground="Red"><Bold><Run Text="所列项"/></Bold></Span><Run Text="以外，请您选择增修以下内容："/></TextBlock>
+        <DataGrid x:Name="more" HorizontalAlignment="Left" Height="429" Margin="640,211,0,0" VerticalAlignment="Top" Width="630" Background="{x:Null}" Foreground="#FF94407B" ColumnHeaderStyle="{DynamicResource MaterialDesignRaisedButton}">
+            <DataGrid.RowHeaderStyle>
+                <Style/>
+            </DataGrid.RowHeaderStyle>
+        </DataGrid>
+        <Button Content="下一步" HorizontalAlignment="Left" Height="65" Margin="1037,645,0,0" VerticalAlignment="Top" Width="198" FontSize="25" Background="#FFB73A70" Foreground="White" BorderBrush="{x:Null}" Click="Button_Click"/>
+
+    </Grid>
+</Page>

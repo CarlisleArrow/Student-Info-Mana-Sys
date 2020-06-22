@@ -1,0 +1,53 @@
+﻿<Window x:Class="学生信息管理系统_.NET_Core_.Stu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:学生信息管理系统_.NET_Core_"
+        mc:Ignorable="d"
+        Title="重庆科技学院学生" Height="720" Width="1280" WindowStyle="None" WindowStartupLocation="CenterScreen" MinWidth="1280" MinHeight="720" MaxWidth="1280" MaxHeight="720" ResizeMode="NoResize">
+    <Grid>
+        <Grid HorizontalAlignment="Center" Height="300" VerticalAlignment="Top" Width="1280">
+            <Grid.Background>
+                <ImageBrush ImageSource="批注 2020-03-13 061142.png" Stretch="None"/>
+            </Grid.Background>
+            <Label x:Name="Display" Content="您好，" HorizontalAlignment="Left" Height="70" Margin="55,45,0,0" VerticalAlignment="Top" Width="495" Foreground="#DD000000" FontSize="50" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Height="140" Margin="55,150,0,0" Text="您已在这里，我们已经为其添加了一些功能使其就绪，您可以点击下方的按钮实现您的期望。更多功能我们正在陆续添加中，请稍安勿躁。" TextWrapping="Wrap" VerticalAlignment="Top" Width="635" FontSize="24" LineHeight="48" Foreground="#FF6C6C6C"/>
+        </Grid>
+        <Grid HorizontalAlignment="Center" Height="430" Margin="0,300,0,0" VerticalAlignment="Top" Width="1280" Background="#FFB05784">
+            <Grid HorizontalAlignment="Left" Height="123" Margin="80,68,0,0" VerticalAlignment="Top" Width="155">
+                <Grid.Background>
+                    <ImageBrush Stretch="None" ImageSource="/1.png"/>
+                </Grid.Background>
+            </Grid>
+            <Label Content="个人信息" HorizontalAlignment="Left" Height="54" Margin="45,196,0,0" VerticalAlignment="Top" Width="225" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="了解你的基本信息" HorizontalAlignment="Left" Height="50" Margin="52,250,0,0" VerticalAlignment="Top" Width="210" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Button Content="现在开始" HorizontalAlignment="Left" Height="55" Margin="70,305,0,0" VerticalAlignment="Top" Width="165" Background="White" Foreground="#FFB05784" FontSize="22" Click="Button_Click" FontStyle="Normal" FontWeight="Normal" FontFamily="Microsoft YaHei" BorderBrush="{x:Null}"/>
+            <Grid HorizontalAlignment="Left" Height="104" Margin="425,78,0,0" VerticalAlignment="Top" Width="152">
+                <Grid.Background>
+                    <ImageBrush ImageSource="图片30.png" Stretch="Uniform"/>
+                </Grid.Background>
+            </Grid>
+            <Label Content="教务系统" HorizontalAlignment="Left" Height="54" Margin="414,196,0,0" VerticalAlignment="Top" Width="174" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="选课成绩" HorizontalAlignment="Left" Height="50" Margin="430,250,0,0" VerticalAlignment="Top" Width="147" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Button x:Name="jw" Content="现在开始" HorizontalAlignment="Left" Height="55" Margin="414,305,0,0" VerticalAlignment="Top" Width="165" BorderBrush="{x:Null}" Background="White" Foreground="#FFB05784" FontSize="22" Click="jw_Click"/>
+            <Grid HorizontalAlignment="Left" Height="104" Margin="753,78,0,0" VerticalAlignment="Top" Width="152">
+                <Grid.Background>
+                    <ImageBrush ImageSource="图片0.png" Stretch="Uniform"/>
+                </Grid.Background>
+            </Grid>
+            <Label Content="信息采集系统" HorizontalAlignment="Left" Height="54" Margin="734,196,0,0" VerticalAlignment="Top" Width="190" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="信息填报" HorizontalAlignment="Left" Height="50" Margin="762,250,0,0" VerticalAlignment="Top" Width="148" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Button Content="现在开始" HorizontalAlignment="Left" Height="55" Margin="746,305,0,0" VerticalAlignment="Top" Width="166" BorderBrush="{x:Null}" Background="White" Foreground="#FFB05784" FontSize="22" Click="Button_Click_1"/>
+            <Grid HorizontalAlignment="Left" Height="104" Margin="1066,78,0,0" VerticalAlignment="Top" Width="152">
+                <Grid.Background>
+                    <ImageBrush ImageSource="图片5.png" Stretch="Uniform"/>
+                </Grid.Background>
+            </Grid>
+            <Label Content="注销登录" HorizontalAlignment="Left" Height="54" Margin="1059,196,0,0" VerticalAlignment="Top" Width="174" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="离开综合信息服务系统" HorizontalAlignment="Left" Height="50" Margin="1035,250,0,0" VerticalAlignment="Top" Width="215" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Button x:Name="Exit" Content="现在开始" HorizontalAlignment="Left" Height="55" Margin="1059,305,0,0" VerticalAlignment="Top" Width="166" BorderBrush="{x:Null}" Background="White" Foreground="#FFB05784" FontSize="22" Click="Exit_Click"/>
+        </Grid>
+
+    </Grid>
+</Window>
